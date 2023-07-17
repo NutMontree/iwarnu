@@ -9,7 +9,8 @@ import RegisterPage from "./pages/RegisterPage";
 import ReportPage from "./pages/ReportPage";
 import ReportsFormPage from "./pages/ReportsFormPage";
 import ReportsPage from "./pages/ReportsPage";
-
+import SearchPage from "./pages/SearchPage";
+import ShowPage from "./pages/ShowPage";
 
 // axios.defaults.baseURL = 'http://localhost:4000';
 // axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL;
@@ -30,6 +31,8 @@ function App() {
           <Route path="/Reports/new" element={<ReportsFormPage />} />
           <Route path="/Reports/:id" element={<ReportsFormPage />} />
           <Route path="/ReportsFormPage" element={<ReportsFormPage />} />
+          <Route path="/SearchPage" element={<SearchPage />} />
+          <Route path="/ShowPage" element={<ShowPage />} />
         </Route>
       </Routes>
     </UserContextProvider >
