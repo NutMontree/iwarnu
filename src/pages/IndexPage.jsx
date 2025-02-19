@@ -5,7 +5,7 @@ import DataTime from "../component/DataTime";
 export default function IndexPage() {
   const [reports, setReports] = useState([]);
   const fetchReportsData = () => {
-    fetch("https://vite-iwarnu-server.vercel.app/reports")
+    fetch("https://iwarnu-server.vercel.app/reports")
       .then((response) => {
         return response.json();
       })
