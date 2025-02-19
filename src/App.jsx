@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Layout from "./component/Layout";
 import { UserContextProvider } from "./component/UserContext";
 import AccountPage from "./pages/AccountPage";
-import FooterPage from './pages/FooterPage';
+import FooterPage from "./pages/FooterPage";
 import IndexPage from "./pages/IndexPage";
 import LoginPage from "./pages/LoginPage";
 import ProfilePage from "./pages/ProfilePage.jsx";
@@ -14,8 +14,6 @@ import ReportsPage from "./pages/ReportsPage";
 import SearchPage from "./pages/SearchPage";
 import SerachTextPage from "./pages/SerachTextPage";
 import ShowPage from "./pages/ShowPage";
-
-
 
 axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL;
 axios.defaults.withCredentials = true;
@@ -41,8 +39,8 @@ function App() {
           <Route path="/FooterPage" element={<FooterPage />} />
         </Route>
       </Routes>
-    </UserContextProvider >
-  )
+    </UserContextProvider>
+  );
 }
 
-export default App
+export default App;
