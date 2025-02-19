@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
-import AccountNav from "../AccountNav";
+import AccountNav from "../component/AccountNav";
 
 export default function ReportsPage() {
     const [reports, setReports] = useState([]);
@@ -10,7 +10,6 @@ export default function ReportsPage() {
             setReports(data);
         })
     }, []);
-
 
     return (
         <div>

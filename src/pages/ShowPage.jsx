@@ -5,7 +5,7 @@ export default function ShowPage() {
     const [reports, setReports] = useState([])
 
     const fetchReportsData = () => {
-        fetch('https://vite-iwarnu-server.vercel.app/server/reports')
+        fetch('https://vite-iwarnu-server.vercel.app/reports')
             .then(response => {
                 return response.json()
             })

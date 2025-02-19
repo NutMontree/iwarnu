@@ -1,7 +1,9 @@
 import axios from "axios";
 import { Route, Routes } from "react-router-dom";
-import Layout from "./Layout";
-import { UserContextProvider } from "./UserContext";
+import Layout from "./component/Layout";
+import { UserContextProvider } from "./component/UserContext";
+import AccountPage from "./pages/AccountPage";
+import FooterPage from './pages/FooterPage';
 import IndexPage from "./pages/IndexPage";
 import LoginPage from "./pages/LoginPage";
 import ProfilePage from "./pages/ProfilePage.jsx";
@@ -10,10 +12,11 @@ import ReportPage from "./pages/ReportPage";
 import ReportsFormPage from "./pages/ReportsFormPage";
 import ReportsPage from "./pages/ReportsPage";
 import SearchPage from "./pages/SearchPage";
+import SerachTextPage from "./pages/SerachTextPage";
 import ShowPage from "./pages/ShowPage";
 
-// axios.defaults.baseURL = 'http://localhost:4000';
-// axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL;
+
+
 axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL;
 axios.defaults.withCredentials = true;
 
@@ -33,6 +36,9 @@ function App() {
           <Route path="/ReportsFormPage" element={<ReportsFormPage />} />
           <Route path="/SearchPage" element={<SearchPage />} />
           <Route path="/ShowPage" element={<ShowPage />} />
+          <Route path="/SerachTextPage" element={<SerachTextPage />} />
+          <Route path="/AccountPage" element={<AccountPage />} />
+          <Route path="/FooterPage" element={<FooterPage />} />
         </Route>
       </Routes>
     </UserContextProvider >

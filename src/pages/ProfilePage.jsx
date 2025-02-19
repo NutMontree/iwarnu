@@ -1,12 +1,12 @@
 import axios from "axios";
 import { useContext, useState } from "react";
 import { Navigate, useParams } from "react-router-dom";
-import AccountNav from "../AccountNav";
-import { UserContext } from "../UserContext.jsx";
+import AccountNav from "../component/AccountNav";
+import { UserContext } from "../component/UserContext.jsx";
 import ReportsPage from './ReportsPage';
 
 export default function ProfilePage() {
-    const [redirect, setRedirect] = useState(null);
+    const [redirect, setRedirect] = useState();
     const { ready, user, setUser } = useContext(UserContext);
     let { subpage } = useParams();
     if (subpage === undefined) {

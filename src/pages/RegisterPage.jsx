@@ -20,7 +20,7 @@ export default function RegisterPage() {
                 phone,
                 agency,
             });
-            alert('ยินดีด้วย คุณศมัครสมาชิกสำเร็จแล้ว. กรุณาเข้าสู่ระบบ');
+            alert('ยินดีด้วย คุณสมัครสมาชิกสำเร็จแล้ว. กรุณาเข้าสู่ระบบ');
         } catch (e) {
             alert('สมัครสมาชิกไม่สำเร็จ. โปรดรองใหม่อีกครั้ง');
         }
@@ -54,10 +54,7 @@ export default function RegisterPage() {
                         placeholder="ชื่อหน่วยงาน: สภ.เมืองศรีสะเกษ"
                         value={agency}
                         onChange={ev => setAgency(ev.target.value)} />
-
-
-
-                    <button className="primary">Register</button>
+                    <button className="bg-blue-500 bg-blue p-2 w-full text-white rounded-2xl my-4">Register</button>
                     <div className="text-center py-2 text-gray-500">
                         Already a member? <Link className="underline text-black" to={'/login'}>Login</Link>
                     </div>

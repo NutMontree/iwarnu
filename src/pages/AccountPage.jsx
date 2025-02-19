@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useContext, useState } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
-import { UserContext } from '../UserContext';
+import { UserContext } from '../component/UserContext';
 import ReportsPage from './ReportsPage';
 
 export default function AccountPage() {
@@ -50,14 +50,11 @@ export default function AccountPage() {
                             ข้อมูลผู้ใช้
                             <div className="show-email">
                                 ชื่อผู้ใช้: {user.name} <br />
-                                EMail: ({user.email}) <br />
+                                Email: ({user.email}) <br />
                                 รหัสประจำตัว: {user.number} <br />
                                 เบอร์โทรศัพท์: {user.phone} <br />
                                 ชื่อหน่วยงาน: {user.agency} <br />
                             </div>
-
-
-
                             <button onClick={logout} className="primary max-w-sm mt-2">Logout</button>
                         </div>
                     </div>

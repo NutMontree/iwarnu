@@ -1,6 +1,6 @@
 export default function AddressLink({ children, className = null }) {
     if (!className) {
-        className = 'my-3 block';
+        className = 'my-4 block';
     }
     className += ' flex gap-1 font-semibold underline';
     return (

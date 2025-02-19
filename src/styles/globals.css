@@ -18,3 +18,13 @@ button.primary {
     background-color: #F5385D;
     @apply bg-primary p-2 w-full text-white rounded-2xl;
 }
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
