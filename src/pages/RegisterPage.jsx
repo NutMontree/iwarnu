@@ -12,7 +12,7 @@ export default function RegisterPage() {
   async function registerUser(ev) {
     ev.preventDefault();
     try {
-      await axios.post("https://iwarnu-server.vercel.app/register", {
+      await axios.post("https://iwarnu-server.vercel.app/registers", {
         name,
         email,
         password,
